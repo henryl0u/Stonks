@@ -19,7 +19,7 @@ function DesignPage({ }: Props) {
             <h1>Stonks Design Page</h1>
             <h2>This is where different designs are housed</h2>
             <RatioList data={testIncomeStatementData} config={tableConfig}/>
-            <Table />
+            <Table data = {testIncomeStatementData} config={tableConfig}/>
         </>
     )
 }
