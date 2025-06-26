@@ -29,9 +29,9 @@ const CompanyPage = (props: Props) => {
 
         <CompanyDashboard ticker={ticker!}>
           <Tile title="Company Name" subtitle={company.companyName}></Tile>
-          <Tile title="Price" subtitle={company.price.toString()}></Tile>
           <Tile title="Sector" subtitle={company.sector}></Tile>
-          <Tile title="DCF" subtitle={company.dcf.toString()}></Tile>
+          <Tile title="Price" subtitle={"$" + company.price.toString()}></Tile>
+          <Tile title="DCF" subtitle={"$" + company.dcf.toString()}></Tile>
           <p className='bg-white shadow rounded text-medium text-gray-900 p-3 mt-1 m-4'>
             {company.description}
           </p>
